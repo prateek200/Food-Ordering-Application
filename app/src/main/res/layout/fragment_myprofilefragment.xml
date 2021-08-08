@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.Myprofilefragment"
+    android:background="#05a5fc"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imgprofilephoto"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:src="@drawable/icon"
+        android:layout_marginTop="20sp"
+        android:layout_marginLeft="20dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="#0a0a0a"/>
+
+    <TextView
+    android:id="@+id/txtname"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Name"
+    android:textSize="25sp"
+    android:padding="7dp"
+    android:gravity="center"
+    android:background="#ffffff"
+    android:layout_marginTop="20dp"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:textStyle="bold"
+   android:layout_below="@id/imgprofilephoto"
+        android:textColor="#0a0a0a"
+        />
+
+    <TextView
+        android:id="@+id/txtnumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="9873240024"
+        android:textSize="25sp"
+        android:background="#ffffff"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:padding="7dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/txtname"
+        android:textColor="#0a0a0a"
+        android:textAlignment="center"
+        />
+
+
+    <TextView
+        android:id="@+id/txtemail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:gravity="center"
+        android:background="#ffffff"
+        android:text="prateek@gmail.com"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:padding="7dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/txtnumber"
+        android:textColor="#0a0a0a"
+        />
+
+    <TextView
+        android:id="@+id/txtaddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:gravity="center"
+        android:background="#ffffff"
+        android:text="gurugram"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:padding="7dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/txtemail"
+        android:textColor="#0a0a0a"
+        />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/progressLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fff"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

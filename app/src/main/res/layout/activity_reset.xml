@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.ResetActivity"
+    android:background="#05a5fc">
+    <TextView
+        android:id="@+id/txttext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter the recieved OTP below"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textSize="23sp"
+        android:textColor="#0a0a0a"
+        />
+    <EditText
+        android:id="@+id/etotp"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:hint="OTP"
+        android:layout_below="@id/txttext"
+        android:textSize="23sp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="30dp"
+        android:inputType="number"
+        android:maxLines="1"
+        android:maxLength="4"
+        android:paddingLeft="30dp"
+        android:background="@drawable/roundededittext"
+
+        />
+    <EditText
+        android:id="@+id/etpassword"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_below="@id/etotp"
+        android:hint="Passowrd"
+        android:textSize="23sp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="25dp"
+        android:inputType="textPassword"
+        android:maxLines="1"
+        android:paddingLeft="30dp"
+        android:background="@drawable/roundededittext"
+        />
+
+    <EditText
+        android:id="@+id/etconfirmpssword"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_below="@id/etpassword"
+        android:hint="Confirm Password"
+        android:textSize="23sp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="25dp"
+        android:inputType="textPassword"
+        android:maxLines="1"
+        android:paddingLeft="30dp"
+        android:background="@drawable/roundededittext"
+
+        />
+    <Button
+        android:id="@+id/btnsumbit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sumbit"
+        android:textAllCaps="false"
+        android:layout_marginTop="30dp"
+        android:textSize="30sp"
+        android:background="#143bc7"
+        android:textColor="#ffffff"
+        android:layout_below="@id/etconfirmpssword"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+
+        />
+    <ImageView
+        android:id="@+id/imgotp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/otp"
+        android:layout_above="@id/etpassword"
+        android:paddingLeft="19dp"
+        android:paddingBottom="3dp"
+        />
+
+    <ImageView
+        android:id="@+id/imgpass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/password"
+        android:layout_below="@id/imgotp"
+        android:paddingLeft="19dp"
+        android:paddingTop="32dp"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/password"
+        android:layout_below="@id/imgpass"
+        android:paddingLeft="19dp"
+        android:paddingTop="35dp"
+        />
+
+</RelativeLayout>

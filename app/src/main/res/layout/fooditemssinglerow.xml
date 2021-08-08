@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:weightSum="6">
+
+    <TextView
+        android:id="@+id/txtitemid"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="tempid"
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/txtitemname"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="3.5"
+        android:text="name of the item"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txtitemprice"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.5"
+        android:paddingTop="8dp"
+        android:text="Price"
+        android:textSize="17sp"
+        android:textAlignment="textStart"/>
+
+</LinearLayout>

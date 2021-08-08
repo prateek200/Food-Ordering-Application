@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:layout_marginTop="20dp"
+    >
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="12dp"
+    android:paddingBottom="12dp"
+    >
+
+    <TextView
+        android:id="@+id/txtname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="name of restaurant"
+        android:textSize="23dp"
+        android:textStyle="bold"
+        android:textColor="#050505"
+        android:paddingLeft="10dp"
+        />
+
+    <TextView
+        android:id="@+id/txtdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date"
+        android:textSize="15sp"
+        android:layout_alignParentEnd="true"/>
+    <TextView
+        android:id="@+id/txttime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="time"
+        android:textSize="15sp"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/txtdate"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+    android:id="@+id/recyclerfooditems"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/txtname"
+    android:layout_marginTop="19dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#0a0a0a"
+        android:layout_below="@id/recyclerfooditems"
+        />
+
+    <TextView
+        android:id="@+id/txttotalcost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total cost"
+        android:textSize="17sp"
+        android:layout_below="@id/recyclerfooditems"
+        android:layout_alignParentEnd="true"
+        android:paddingTop="5dp"
+        android:paddingRight="29dp"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#0a0a0a"
+        android:layout_below="@id/txttotalcost"
+        android:paddingTop="5dp"
+        />
+</RelativeLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.RestaurantActivity">
+
+    <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.appbar.AppBarLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="0dp"
+        android:background="#05a5fc"
+        android:id="@+id/toolbar"
+        >
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/resttoolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:title="Restaurant"
+            android:background="#05a5fc"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark"
+            app:layout_scrollFlags="scroll|enterAlways"
+            >
+
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <TextView
+        android:id="@+id/txtmenubelow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="  Choose from menu listed below:"
+        android:layout_below="@id/toolbar"
+        android:textSize="20sp"
+        android:paddingTop="10dp"
+        android:textColor="#070708"
+        android:textStyle="bold"
+        android:layout_marginTop="5dp"/>
+
+        <ImageView
+            android:id="@+id/imgheart"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/favouriteborder"
+            android:layout_below="@id/toolbar"
+            android:paddingTop="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_alignParentEnd="true"
+            android:paddingRight="10dp"
+            />
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:background="#0f0f0f"
+        android:layout_below="@id/txtmenubelow"
+        android:layout_marginTop="5dp"/>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerrestaurant"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/view"
+        android:layout_marginTop="8dp"
+        />
+
+    <Button
+        android:id="@+id/btnproceed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Proceed to Cart"
+        android:visibility="gone"
+        android:background="#143bc7"
+        android:textColor="#ffffff"
+        android:layout_alignParentBottom="true"
+        android:textAllCaps="false"
+        android:textSize="25sp"
+        />
+</RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/progressLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fff"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

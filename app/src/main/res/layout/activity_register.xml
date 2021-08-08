@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.Register"
+    android:background="#05a5fc">
+
+    <com.google.android.material.appbar.AppBarLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="0dp"
+        android:id="@+id/appbar"
+        android:background="#05a5fc"
+        >
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark"
+            app:layout_scrollFlags="scroll|enterAlways"
+
+            />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+<EditText
+    android:id="@+id/etname"
+    android:layout_width="match_parent"
+    android:layout_height="35dp"
+    android:background="#ffffff"
+    android:hint="Name"
+    android:textSize="23sp"
+    android:layout_marginLeft="15dp"
+    android:layout_marginRight="15dp"
+    android:layout_marginTop="35dp"
+    android:inputType="textPersonName"
+    android:layout_below="@id/appbar"
+    android:paddingLeft="28dp"
+    />
+
+    <EditText
+        android:id="@+id/etemailid"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="#ffffff"
+        android:hint="Email Id"
+        android:layout_below="@+id/etname"
+        android:textSize="23sp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="12dp"
+        android:inputType="textWebEmailAddress"
+        android:paddingLeft="28dp"/>
+
+    <EditText
+        android:id="@+id/etmobilenumber"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="#ffffff"
+        android:hint="Mobile Number"
+        android:layout_below="@id/etemailid"
+        android:textSize="23sp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="12dp"
+        android:inputType="number"
+        android:maxLines="1"
+        android:maxLength="10"
+        android:paddingLeft="28dp"
+        />
+
+    <EditText
+        android:id="@+id/etdilevaryadd"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="#ffffff"
+        android:hint="Dilevary Address"
+        android:layout_below="@id/etmobilenumber"
+        android:textSize="23sp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="12dp"
+        android:inputType="textPostalAddress"
+        android:paddingLeft="28dp"
+        />
+
+    <EditText
+        android:id="@+id/etpassword"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="#ffffff"
+        android:layout_below="@id/etdilevaryadd"
+        android:hint="Passowrd"
+        android:textSize="23sp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="12dp"
+        android:inputType="textPassword"
+        android:maxLines="1"
+        android:paddingLeft="28dp"/>
+
+    <EditText
+        android:id="@+id/etconfirmpssword"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="#ffffff"
+        android:layout_below="@id/etpassword"
+        android:hint="Confirm Password"
+        android:textSize="23sp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="12dp"
+        android:inputType="textPassword"
+        android:maxLines="1"
+        android:paddingLeft="28dp"
+        />
+    <Button
+        android:id="@+id/btnregister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:layout_marginTop="35dp"
+        android:textSize="30sp"
+        android:background="#143bc7"
+        android:layout_below="@id/etconfirmpssword"
+        android:layout_centerHorizontal="true"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:textAllCaps="false"
+        android:textColor="#ffffff"
+
+        />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/name"
+       android:layout_alignLeft="@id/etname"
+        android:layout_above="@id/etemailid"
+        android:paddingBottom="2dp"
+        android:paddingLeft="2dp"
+        />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/email"
+        android:layout_alignLeft="@id/etname"
+        android:layout_below="@id/etname"
+        android:paddingTop="20dp"
+        android:paddingLeft="2dp"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/mobile"
+        android:layout_alignLeft="@id/etname"
+        android:layout_below="@id/etemailid"
+        android:paddingTop="20dp"
+        android:paddingLeft="2dp"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/deliveryadd"
+        android:layout_alignLeft="@id/etname"
+        android:layout_below="@id/etmobilenumber"
+        android:paddingTop="20dp"
+        android:paddingLeft="2dp"
+        />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/password"
+        android:layout_alignLeft="@id/etname"
+        android:layout_below="@id/etdilevaryadd"
+        android:paddingTop="20dp"
+        android:paddingLeft="2dp"
+        />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/password"
+        android:layout_alignLeft="@id/etname"
+        android:layout_below="@id/etpassword"
+        android:paddingTop="20dp"
+        android:paddingLeft="2dp"
+        />
+</RelativeLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.SuccessfulActivity"
+    android:background="#05a5fc">
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/done"
+        android:layout_above="@id/txttext"
+        android:layout_centerHorizontal="true"
+        />
+
+    <TextView
+        android:id="@+id/txttext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your Order has been successfully placed!"
+        android:layout_centerInParent="true"
+        android:textSize="22sp"
+        android:textColor="#0a0a0a"
+        android:textAlignment="center"
+        />
+
+    <Button
+        android:id="@+id/btnok"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Ok"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="30sp"
+        android:textAllCaps="false"
+        android:layout_marginBottom="15dp"
+        android:textColor="#ffffff"
+        android:background="#143bc7"
+        />
+</RelativeLayout>
